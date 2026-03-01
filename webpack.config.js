@@ -8,8 +8,8 @@ module.exports = {
     output: {
         // Caminho absoluto para o diretório de saída
         path: path.resolve(__dirname, "dist"),
-        filename: bundle.js
-    }
+        filename: "bundle.js",
+    },
     // Configuração do módulo
     module: {
         rules: [
@@ -37,7 +37,7 @@ module.exports = {
     resolve: {
         // Extensões de arquivos a serem resolvidas automaticamente
         extensions:[".js", ".jsx"]
-    }
+    },
     // Configurações do servidor de desenvolvimento
     devServer: {
         // Configuração de arquivos estáticos a serem servidos
